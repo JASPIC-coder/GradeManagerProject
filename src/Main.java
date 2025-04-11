@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        GradeManager manager = new GradeManager(5); // 👈 We allow only 5 grades
+        GradeManager manager = new GradeManager(5); //  We allow only 5 grades
 
         int attempts = 0;
-        int maxAttempts = 7; // 👈 User can try entering grades 7 times (even if some are invalid)
+        int maxAttempts = 7; //  User can try entering grades 7 times (even if some are invalid)
 
         // 🎉 Fun and friendly welcome message
         System.out.println("🎉 Welcome to the Grade Entry Portal!");
