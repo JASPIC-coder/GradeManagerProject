@@ -8,8 +8,8 @@ public class Main {
         int attempts = 0;
         int maxAttempts = 7; //  User can try entering grades 7 times (even if some are invalid)
 
-        // 🎉 Fun and friendly welcome message
-        System.out.println("🎉 Welcome to the Grade Entry Portal!");
+        //  welcome message
+        System.out.println(" Welcome to the Grade Entry Portal!");
         System.out.println(" You can enter up to 5 grades (from 0 to 100).");
         System.out.println(" But be careful... you only have 7 total attempts!");
         System.out.println(" Let's see how well you can do! Ready? Let's go!\n");
@@ -36,7 +36,7 @@ public class Main {
         }
 
         // Show summary
-        System.out.println("\n✅ Grade Entry Complete!");
+        System.out.println("\n Grade Entry Complete!");
         manager.printGrades();
         manager.sortGrades();
         manager.printGrades();
@@ -46,14 +46,14 @@ public class Main {
         System.out.println(" Lowest grade: " + manager.getLowestGrade());
 
         // Optional: search
-        System.out.print("\n🔍 Enter a grade to search: ");
+        System.out.print("\n Enter a grade to search: ");
         try {
             double searchGrade = scanner.nextDouble();
             int index = manager.searchGrade(searchGrade);
             if (index != -1) {
-                System.out.println("✅ Grade " + searchGrade + " found at index: " + index);
+                System.out.println(" Grade " + searchGrade + " found at index: " + index);
             } else {
-                System.out.println("❌ Grade " + searchGrade + " not found.");
+                System.out.println(" Grade " + searchGrade + " not found.");
             }
         } catch (Exception e) {
             System.out.println("⚠️ Invalid input for search.");
