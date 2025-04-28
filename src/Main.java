@@ -20,14 +20,14 @@ public class Main {
                 double grade = scanner.nextDouble();
                 manager.addGrade(grade);
             } catch (Exception e) {
-                System.out.println("⚠️ Invalid input! Please enter a valid number.");
+                System.out.println(" Invalid input! Please enter a valid number.");
                 scanner.next(); // clear the wrong input
             }
 
             attempts++;
 
             if (attempts == maxAttempts - 1) {
-                System.out.println("⚠️ Be careful! You have only 1 attempt remaining.");
+                System.out.println("Be careful! You have only 1 attempt remaining.");
             }
 
             if (attempts == maxAttempts) {
@@ -56,7 +56,7 @@ public class Main {
                 System.out.println(" Grade " + searchGrade + " not found.");
             }
         } catch (Exception e) {
-            System.out.println("⚠️ Invalid input for search.");
+            System.out.println(" Invalid input for search.");
         }
 
         scanner.close();
